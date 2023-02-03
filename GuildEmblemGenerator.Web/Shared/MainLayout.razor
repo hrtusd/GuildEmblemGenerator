@@ -1,0 +1,31 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider @ref="@_mudThemeProvider" @bind-IsDarkMode="@_isDarkMode"/>
+
+<MudLayout>
+    <MudAppBar Elevation="1">
+        <MudText Typo="Typo.h5" Class="ml-3">Guild Emblem Generator</MudText>
+        <MudSpacer />
+
+        <MudToggleIconButton @bind-Toggled="@_isDarkMode"
+                     Icon="@Icons.Material.Outlined.DarkMode" Color="@Color.Surface" Title="Dark mode" 
+                     ToggledIcon="@Icons.Material.Outlined.LightMode" ToggledColor="@Color.Warning" ToggledTitle="Light mode" />
+    </MudAppBar>
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    private bool _isDarkMode;
+    private MudThemeProvider? _mudThemeProvider;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            _isDarkMode = await _mudThemeProvider.GetSystemPreference();
+            StateHasChanged();
+        }
+    }
+}

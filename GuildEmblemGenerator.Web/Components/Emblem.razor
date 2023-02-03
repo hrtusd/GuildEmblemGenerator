@@ -1,0 +1,42 @@
+﻿@using SkiaSharp
+@using SkiaSharp.Views.Blazor
+
+@inject EmblemViewModel ViewModel
+
+<MudStack Justify="Justify.Center" Row="true">
+    <MudPaper Class="pa-3">
+        <MudStack>
+            <SKCanvasView width="250px" height="250px" @ref="@ViewModel.CanvasView" OnPaintSurface="@ViewModel.PaintSurface" />
+
+            @if (ViewModel.CanDownload)
+            {
+                <MudButton OnClick="@ViewModel.Download">Download</MudButton>
+            }
+        </MudStack>
+    </MudPaper>
+    <MudPaper Class="pa-3">
+        <MudForm>
+            <MudRadioGroup @bind-SelectedOption="@ViewModel.Faction">
+                <MudRadio Option="@EFaction.Alliance" Color="Color.Primary">Alliance</MudRadio>
+                <MudRadio Option="@EFaction.Horde" Color="Color.Secondary">Horde</MudRadio>
+            </MudRadioGroup>
+
+            <MudSelect Dense="true" T="int" @bind-Value="ViewModel.Border" Label="Border" Variant="Variant.Text">
+                @foreach (var item in Enumerable.Range(0, 7))
+                {
+                    <MudSelectItem Value="@item" />
+                }
+            </MudSelect>
+            <MudSelect Dense="true" T="int" @bind-Value="ViewModel.Icon" Label="Icon" Variant="Variant.Text">
+                @foreach (var item in Enumerable.Range(0, 196))
+                {
+                    <MudSelectItem Value="@item" />
+                }
+            </MudSelect>
+
+            <MudColorPicker @bind-Value="@ViewModel.BackgroundColor" Label="Background" ColorPickerView="ColorPickerView.Grid" DisableAlpha="true" />
+            <MudColorPicker @bind-Value="@ViewModel.BorderColor" Label="Border" ColorPickerView="ColorPickerView.Grid" DisableAlpha="true" />
+            <MudColorPicker @bind-Value="@ViewModel.IconColor" Label="Icon" ColorPickerView="ColorPickerView.Grid" DisableAlpha="true" />
+        </MudForm>
+    </MudPaper>
+</MudStack>

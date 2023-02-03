@@ -1,0 +1,854 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\bg_00.png" />
+    <None Remove="Images\Borders\border_00.png" />
+    <None Remove="Images\Borders\border_01.png" />
+    <None Remove="Images\Borders\border_02.png" />
+    <None Remove="Images\Borders\border_03.png" />
+    <None Remove="Images\Borders\border_04.png" />
+    <None Remove="Images\Borders\border_05.png" />
+    <None Remove="Images\Borders\border_06.png" />
+    <None Remove="Images\default-alliance.png" />
+    <None Remove="Images\default-horde.png" />
+    <None Remove="Images\hooks.png" />
+    <None Remove="Images\Icons\emblem_00.png" />
+    <None Remove="Images\Icons\emblem_01.png" />
+    <None Remove="Images\Icons\emblem_02.png" />
+    <None Remove="Images\Icons\emblem_03.png" />
+    <None Remove="Images\Icons\emblem_04.png" />
+    <None Remove="Images\Icons\emblem_05.png" />
+    <None Remove="Images\Icons\emblem_06.png" />
+    <None Remove="Images\Icons\emblem_07.png" />
+    <None Remove="Images\Icons\emblem_08.png" />
+    <None Remove="Images\Icons\emblem_09.png" />
+    <None Remove="Images\Icons\emblem_10.png" />
+    <None Remove="Images\Icons\emblem_100.png" />
+    <None Remove="Images\Icons\emblem_101.png" />
+    <None Remove="Images\Icons\emblem_102.png" />
+    <None Remove="Images\Icons\emblem_103.png" />
+    <None Remove="Images\Icons\emblem_104.png" />
+    <None Remove="Images\Icons\emblem_105.png" />
+    <None Remove="Images\Icons\emblem_106.png" />
+    <None Remove="Images\Icons\emblem_107.png" />
+    <None Remove="Images\Icons\emblem_108.png" />
+    <None Remove="Images\Icons\emblem_109.png" />
+    <None Remove="Images\Icons\emblem_11.png" />
+    <None Remove="Images\Icons\emblem_110.png" />
+    <None Remove="Images\Icons\emblem_111.png" />
+    <None Remove="Images\Icons\emblem_112.png" />
+    <None Remove="Images\Icons\emblem_113.png" />
+    <None Remove="Images\Icons\emblem_114.png" />
+    <None Remove="Images\Icons\emblem_115.png" />
+    <None Remove="Images\Icons\emblem_116.png" />
+    <None Remove="Images\Icons\emblem_117.png" />
+    <None Remove="Images\Icons\emblem_118.png" />
+    <None Remove="Images\Icons\emblem_119.png" />
+    <None Remove="Images\Icons\emblem_12.png" />
+    <None Remove="Images\Icons\emblem_120.png" />
+    <None Remove="Images\Icons\emblem_121.png" />
+    <None Remove="Images\Icons\emblem_122.png" />
+    <None Remove="Images\Icons\emblem_123.png" />
+    <None Remove="Images\Icons\emblem_124.png" />
+    <None Remove="Images\Icons\emblem_125.png" />
+    <None Remove="Images\Icons\emblem_126.png" />
+    <None Remove="Images\Icons\emblem_127.png" />
+    <None Remove="Images\Icons\emblem_128.png" />
+    <None Remove="Images\Icons\emblem_129.png" />
+    <None Remove="Images\Icons\emblem_13.png" />
+    <None Remove="Images\Icons\emblem_130.png" />
+    <None Remove="Images\Icons\emblem_131.png" />
+    <None Remove="Images\Icons\emblem_132.png" />
+    <None Remove="Images\Icons\emblem_133.png" />
+    <None Remove="Images\Icons\emblem_134.png" />
+    <None Remove="Images\Icons\emblem_135.png" />
+    <None Remove="Images\Icons\emblem_136.png" />
+    <None Remove="Images\Icons\emblem_137.png" />
+    <None Remove="Images\Icons\emblem_138.png" />
+    <None Remove="Images\Icons\emblem_139.png" />
+    <None Remove="Images\Icons\emblem_14.png" />
+    <None Remove="Images\Icons\emblem_140.png" />
+    <None Remove="Images\Icons\emblem_141.png" />
+    <None Remove="Images\Icons\emblem_142.png" />
+    <None Remove="Images\Icons\emblem_143.png" />
+    <None Remove="Images\Icons\emblem_144.png" />
+    <None Remove="Images\Icons\emblem_145.png" />
+    <None Remove="Images\Icons\emblem_146.png" />
+    <None Remove="Images\Icons\emblem_147.png" />
+    <None Remove="Images\Icons\emblem_148.png" />
+    <None Remove="Images\Icons\emblem_149.png" />
+    <None Remove="Images\Icons\emblem_15.png" />
+    <None Remove="Images\Icons\emblem_150.png" />
+    <None Remove="Images\Icons\emblem_151.png" />
+    <None Remove="Images\Icons\emblem_152.png" />
+    <None Remove="Images\Icons\emblem_153.png" />
+    <None Remove="Images\Icons\emblem_154.png" />
+    <None Remove="Images\Icons\emblem_155.png" />
+    <None Remove="Images\Icons\emblem_156.png" />
+    <None Remove="Images\Icons\emblem_157.png" />
+    <None Remove="Images\Icons\emblem_158.png" />
+    <None Remove="Images\Icons\emblem_159.png" />
+    <None Remove="Images\Icons\emblem_16.png" />
+    <None Remove="Images\Icons\emblem_160.png" />
+    <None Remove="Images\Icons\emblem_161.png" />
+    <None Remove="Images\Icons\emblem_162.png" />
+    <None Remove="Images\Icons\emblem_163.png" />
+    <None Remove="Images\Icons\emblem_164.png" />
+    <None Remove="Images\Icons\emblem_165.png" />
+    <None Remove="Images\Icons\emblem_166.png" />
+    <None Remove="Images\Icons\emblem_167.png" />
+    <None Remove="Images\Icons\emblem_168.png" />
+    <None Remove="Images\Icons\emblem_169.png" />
+    <None Remove="Images\Icons\emblem_17.png" />
+    <None Remove="Images\Icons\emblem_170.png" />
+    <None Remove="Images\Icons\emblem_171.png" />
+    <None Remove="Images\Icons\emblem_172.png" />
+    <None Remove="Images\Icons\emblem_173.png" />
+    <None Remove="Images\Icons\emblem_174.png" />
+    <None Remove="Images\Icons\emblem_175.png" />
+    <None Remove="Images\Icons\emblem_176.png" />
+    <None Remove="Images\Icons\emblem_177.png" />
+    <None Remove="Images\Icons\emblem_178.png" />
+    <None Remove="Images\Icons\emblem_179.png" />
+    <None Remove="Images\Icons\emblem_18.png" />
+    <None Remove="Images\Icons\emblem_180.png" />
+    <None Remove="Images\Icons\emblem_181.png" />
+    <None Remove="Images\Icons\emblem_182.png" />
+    <None Remove="Images\Icons\emblem_183.png" />
+    <None Remove="Images\Icons\emblem_184.png" />
+    <None Remove="Images\Icons\emblem_185.png" />
+    <None Remove="Images\Icons\emblem_186.png" />
+    <None Remove="Images\Icons\emblem_187.png" />
+    <None Remove="Images\Icons\emblem_188.png" />
+    <None Remove="Images\Icons\emblem_189.png" />
+    <None Remove="Images\Icons\emblem_19.png" />
+    <None Remove="Images\Icons\emblem_190.png" />
+    <None Remove="Images\Icons\emblem_191.png" />
+    <None Remove="Images\Icons\emblem_192.png" />
+    <None Remove="Images\Icons\emblem_193.png" />
+    <None Remove="Images\Icons\emblem_194.png" />
+    <None Remove="Images\Icons\emblem_195.png" />
+    <None Remove="Images\Icons\emblem_20.png" />
+    <None Remove="Images\Icons\emblem_21.png" />
+    <None Remove="Images\Icons\emblem_22.png" />
+    <None Remove="Images\Icons\emblem_23.png" />
+    <None Remove="Images\Icons\emblem_24.png" />
+    <None Remove="Images\Icons\emblem_25.png" />
+    <None Remove="Images\Icons\emblem_26.png" />
+    <None Remove="Images\Icons\emblem_27.png" />
+    <None Remove="Images\Icons\emblem_28.png" />
+    <None Remove="Images\Icons\emblem_29.png" />
+    <None Remove="Images\Icons\emblem_30.png" />
+    <None Remove="Images\Icons\emblem_31.png" />
+    <None Remove="Images\Icons\emblem_32.png" />
+    <None Remove="Images\Icons\emblem_33.png" />
+    <None Remove="Images\Icons\emblem_34.png" />
+    <None Remove="Images\Icons\emblem_35.png" />
+    <None Remove="Images\Icons\emblem_36.png" />
+    <None Remove="Images\Icons\emblem_37.png" />
+    <None Remove="Images\Icons\emblem_38.png" />
+    <None Remove="Images\Icons\emblem_39.png" />
+    <None Remove="Images\Icons\emblem_40.png" />
+    <None Remove="Images\Icons\emblem_41.png" />
+    <None Remove="Images\Icons\emblem_42.png" />
+    <None Remove="Images\Icons\emblem_43.png" />
+    <None Remove="Images\Icons\emblem_44.png" />
+    <None Remove="Images\Icons\emblem_45.png" />
+    <None Remove="Images\Icons\emblem_46.png" />
+    <None Remove="Images\Icons\emblem_47.png" />
+    <None Remove="Images\Icons\emblem_48.png" />
+    <None Remove="Images\Icons\emblem_49.png" />
+    <None Remove="Images\Icons\emblem_50.png" />
+    <None Remove="Images\Icons\emblem_51.png" />
+    <None Remove="Images\Icons\emblem_52.png" />
+    <None Remove="Images\Icons\emblem_53.png" />
+    <None Remove="Images\Icons\emblem_54.png" />
+    <None Remove="Images\Icons\emblem_55.png" />
+    <None Remove="Images\Icons\emblem_56.png" />
+    <None Remove="Images\Icons\emblem_57.png" />
+    <None Remove="Images\Icons\emblem_58.png" />
+    <None Remove="Images\Icons\emblem_59.png" />
+    <None Remove="Images\Icons\emblem_60.png" />
+    <None Remove="Images\Icons\emblem_61.png" />
+    <None Remove="Images\Icons\emblem_62.png" />
+    <None Remove="Images\Icons\emblem_63.png" />
+    <None Remove="Images\Icons\emblem_64.png" />
+    <None Remove="Images\Icons\emblem_65.png" />
+    <None Remove="Images\Icons\emblem_66.png" />
+    <None Remove="Images\Icons\emblem_67.png" />
+    <None Remove="Images\Icons\emblem_68.png" />
+    <None Remove="Images\Icons\emblem_69.png" />
+    <None Remove="Images\Icons\emblem_70.png" />
+    <None Remove="Images\Icons\emblem_71.png" />
+    <None Remove="Images\Icons\emblem_72.png" />
+    <None Remove="Images\Icons\emblem_73.png" />
+    <None Remove="Images\Icons\emblem_74.png" />
+    <None Remove="Images\Icons\emblem_75.png" />
+    <None Remove="Images\Icons\emblem_76.png" />
+    <None Remove="Images\Icons\emblem_77.png" />
+    <None Remove="Images\Icons\emblem_78.png" />
+    <None Remove="Images\Icons\emblem_79.png" />
+    <None Remove="Images\Icons\emblem_80.png" />
+    <None Remove="Images\Icons\emblem_81.png" />
+    <None Remove="Images\Icons\emblem_82.png" />
+    <None Remove="Images\Icons\emblem_83.png" />
+    <None Remove="Images\Icons\emblem_84.png" />
+    <None Remove="Images\Icons\emblem_85.png" />
+    <None Remove="Images\Icons\emblem_86.png" />
+    <None Remove="Images\Icons\emblem_87.png" />
+    <None Remove="Images\Icons\emblem_88.png" />
+    <None Remove="Images\Icons\emblem_89.png" />
+    <None Remove="Images\Icons\emblem_90.png" />
+    <None Remove="Images\Icons\emblem_91.png" />
+    <None Remove="Images\Icons\emblem_92.png" />
+    <None Remove="Images\Icons\emblem_93.png" />
+    <None Remove="Images\Icons\emblem_94.png" />
+    <None Remove="Images\Icons\emblem_95.png" />
+    <None Remove="Images\Icons\emblem_96.png" />
+    <None Remove="Images\Icons\emblem_97.png" />
+    <None Remove="Images\Icons\emblem_98.png" />
+    <None Remove="Images\Icons\emblem_99.png" />
+    <None Remove="Images\ring-horde.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\bg_00.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Borders\border_00.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Borders\border_01.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Borders\border_02.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Borders\border_04.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Borders\border_05.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Borders\border_06.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\default-alliance.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\default-horde.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_00.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_01.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_02.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_03.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_04.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_05.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_06.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_07.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_08.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_09.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_10.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_100.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_101.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_102.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_103.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_104.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_105.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_106.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_107.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_108.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_109.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_11.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_110.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_111.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_112.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_113.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_114.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_115.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_116.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_117.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_118.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_119.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_12.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_120.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_121.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_122.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_123.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_124.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_125.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_126.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_127.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_128.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_129.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_13.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_130.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_131.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_132.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_133.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_134.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_135.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_136.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_137.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_138.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_139.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_14.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_140.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_141.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_142.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_143.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_144.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_145.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_146.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_147.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_148.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_149.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_15.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_150.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_151.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_152.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_153.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_154.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_155.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_156.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_157.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_158.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_159.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_16.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_160.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_161.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_162.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_163.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_164.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_165.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_166.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_167.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_168.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_169.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_17.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_170.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_171.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_172.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_173.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_174.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_175.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_176.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_177.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_178.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_179.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_18.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_180.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_181.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_182.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_183.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_184.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_185.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_186.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_187.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_188.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_189.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_19.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_190.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_191.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_192.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_193.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_194.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_195.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_20.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_21.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_22.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_23.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_24.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_25.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_26.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_27.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_28.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_29.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_30.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_31.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_32.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_33.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_34.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_35.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_36.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_37.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_38.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_39.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_40.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_41.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_42.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_43.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_44.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_45.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_46.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_47.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_48.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_49.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_50.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_51.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_52.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_53.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_54.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_55.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_56.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_57.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_58.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_59.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_60.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_61.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_62.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_63.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_64.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_65.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_66.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_67.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_68.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_69.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_70.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_71.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_72.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_73.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_74.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_75.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_76.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_77.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_78.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_79.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_80.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_81.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_82.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_83.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_84.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_85.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_86.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_87.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_88.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_89.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_90.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_91.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_92.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_93.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_94.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_95.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_96.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_97.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_98.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Icons\emblem_99.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\ring-alliance.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\Borders\border_03.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\hooks.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\ring-horde.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="2.88.3" />
+  </ItemGroup>
+
+</Project>
