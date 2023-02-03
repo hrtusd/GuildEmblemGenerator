@@ -8,10 +8,7 @@
         <MudStack>
             <SKCanvasView width="250px" height="250px" @ref="@ViewModel.CanvasView" OnPaintSurface="@ViewModel.PaintSurface" />
 
-            @if (ViewModel.CanDownload)
-            {
-                <MudButton OnClick="@ViewModel.Download">Download</MudButton>
-            }
+            <MudButton Command="@ViewModel.DownloadCommand">Download</MudButton>
         </MudStack>
     </MudPaper>
     <MudPaper Class="pa-3">

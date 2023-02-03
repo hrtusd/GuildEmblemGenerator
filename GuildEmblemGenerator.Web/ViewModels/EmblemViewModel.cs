@@ -4,6 +4,7 @@ using SkiaSharp.Views.Blazor;
 using SkiaSharp;
 using GuildEmblemGenerator.Core;
 using Microsoft.JSInterop;
+using CommunityToolkit.Mvvm.Input;
 
 namespace GuildEmblemGenerator.Web.ViewModels;
 
@@ -44,7 +45,8 @@ public partial class EmblemViewModel : ObservableObject
         _runtime = runtime;
     }
 
-    public async Task Download()
+    [RelayCommand(CanExecute = nameof(CanDownload))]
+    private async Task Download()
     {
         var fileStream = _generator.GetImageStream();
         var fileName = "emblem.png";
@@ -96,6 +98,8 @@ public partial class EmblemViewModel : ObservableObject
             parsedBackgroundColor,
             parsedBorderColor,
             parsedIconColor);
+
+        DownloadCommand.NotifyCanExecuteChanged();
 
         CanvasView?.Invalidate();
     }
